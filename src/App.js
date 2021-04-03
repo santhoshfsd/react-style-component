@@ -1,12 +1,12 @@
-import { Navbar } from './component'
-
+import { Navbar } from './component';
+import GlobalStyle from './globalStyles'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
-
-      <Navbar>
-      </Navbar>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Navbar />
+    </Router >
   );
 }
 

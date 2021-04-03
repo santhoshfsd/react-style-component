@@ -3,9 +3,13 @@ import styled from 'styled-components'
 
 import { Container } from './../../globalStyles'
 
+import { FaMagento } from "react-icons/fa"
+
+import { Link } from 'react-router-dom'
+
 export const Nav = styled.nav`
 height:80px;
-background: whitesmoke;
+background: black;
 display:flex;    
 color:red;
 justify-content:center;
@@ -21,13 +25,19 @@ export const NavbarContainer = styled(Container)`
 display: flex;
 height: 80px;
 justify-content: space-between;
-background-color: yellow;
 ${Container};
-
 `
 
-// export const NavbarContainer = styled(Container)`
-// display:flex;
-// justify-content:space-between;
-// height:80px;
-// $(contianer)`;
+export const NavLogo = styled(Link)`
+color:#fff;
+justify-self :flex-start;
+cursor: pointer;
+text-decoration: none;
+font-size: 2rem;
+display:flex;
+align-items:center;
+`;
+
+export const NavIcon = styled(FaMagento)`
+margin-right: 0.5rem;
+`
